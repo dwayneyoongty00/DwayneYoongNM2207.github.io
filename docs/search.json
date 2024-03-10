@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Dwayne Yoong’s NM2207 Website",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "I’m currently a 2nd year Psychology major. My journey in the realm of psychology has led me to the fascinating world of R programming.\n\n\n\nOne of the subjects I’m taking this year is NM2207, which focuses on understanding the nuances of R programming. I have a deep-seated interest in statistics, and I believe that mastering R programming is pivotal in the psychological research field. Currently, I have a multitude of Statistics module such as PL2132, GEA1000, GEI1001, IT1244, and I’m hopping NM2207 would guide me towards a path into R statistics in Psychology\n\n\n\nI am eager to learn how to read and evaluate datasets effectively. My goal is to extract meaningful trends and insights, which are crucial for psychological research. I believe that with these skills, I can contribute significantly to the field and expand my knowledge in areas that intersect psychology and data analysis."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "",
+    "text": "I’m currently a 2nd year Psychology major. My journey in the realm of psychology has led me to the fascinating world of R programming."
+  },
+  {
+    "objectID": "index.html#my-interests",
+    "href": "index.html#my-interests",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "",
+    "text": "One of the subjects I’m taking this year is NM2207, which focuses on understanding the nuances of R programming. I have a deep-seated interest in statistics, and I believe that mastering R programming is pivotal in the psychological research field. Currently, I have a multitude of Statistics module such as PL2132, GEA1000, GEI1001, IT1244, and I’m hopping NM2207 would guide me towards a path into R statistics in Psychology"
+  },
+  {
+    "objectID": "index.html#my-goals",
+    "href": "index.html#my-goals",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "",
+    "text": "I am eager to learn how to read and evaluate datasets effectively. My goal is to extract meaningful trends and insights, which are crucial for psychological research. I believe that with these skills, I can contribute significantly to the field and expand my knowledge in areas that intersect psychology and data analysis."
   }
 ]
