@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "So i have no idea what to put here\nThis is for NM2207 project where I’ll build a website using R Programming Elon Musk Vs Doge Coin 2021 Visualization :)"
   },
   {
     "objectID": "index.html#about-me",
@@ -33,5 +33,33 @@
     "title": "Dwayne Yoong’s NM2207 Website",
     "section": "",
     "text": "I am eager to learn how to read and evaluate datasets effectively. My goal is to extract meaningful trends and insights, which are crucial for psychological research. I believe that with these skills, I can contribute significantly to the field and expand my knowledge in areas that intersect psychology and data analysis."
+  },
+  {
+    "objectID": "index.html#what-am-i-doing",
+    "href": "index.html#what-am-i-doing",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "What am I doing?",
+    "text": "What am I doing?\nLike many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly."
+  },
+  {
+    "objectID": "index.html#why-am-i-doing-this",
+    "href": "index.html#why-am-i-doing-this",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "Why am I doing this?",
+    "text": "Why am I doing this?\nThe crux of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values."
+  },
+  {
+    "objectID": "index.html#what-will-i-be-using",
+    "href": "index.html#what-will-i-be-using",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "What will I be using?",
+    "text": "What will I be using?\nTo conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle."
+  },
+  {
+    "objectID": "index.html#goals-of-the-analysis",
+    "href": "index.html#goals-of-the-analysis",
+    "title": "Dwayne Yoong’s NM2207 Website",
+    "section": "Goals of the Analysis",
+    "text": "Goals of the Analysis\nWith this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets."
   }
 ]

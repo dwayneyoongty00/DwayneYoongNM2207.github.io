@@ -2,8 +2,7 @@
 title: "About"
 ---
 
-About this site
+# So i have no idea what to put here
 
-```{r}
-1 + 1
-```
+This is for **NM2207** project where I'll build a website using `R Programming` 
+Elon Musk Vs Doge Coin 2021 Visualization :) 
