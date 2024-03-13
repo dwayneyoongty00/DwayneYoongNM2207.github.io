@@ -16,9 +16,9 @@ One of the subjects I'm taking this year is `NM2207`, which focuses on understan
 
 I am eager to learn how to read and evaluate datasets effectively. My goal is to extract **meaningful trends** and insights, which are crucial for psychological research. I believe that with these skills, I can contribute significantly to the field and expand my knowledge in areas that intersect psychology and data analysis.
 
----
+------------------------------------------------------------------------
 
-# Project Introducxtion: The Social Impact of Influencers on Market Value
+# Project Introduction: The Social Impact of Influencers on Market Value
 
 ## What am I doing?
 
@@ -32,9 +32,9 @@ The main point of my analysis is to explore the power of social media influencer
 
 To conduct this analysis, I will be utilizing two primary data sources:
 
-1. **2021 Historical Prices for Dogecoin:** This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin's price fluctuations throughout 2021.
+1.  **2021 Historical Prices for Dogecoin:** This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin's price fluctuations throughout 2021.
 
-2. **2021 Elon Musk's Tweets Related to Dogecoin:** I'll be examining Elon Musk's tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle.
+2.  **2021 Elon Musk's Tweets Related to Dogecoin:** I'll be examining Elon Musk's tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle.
 
 ## Goals of the Analysis
 
