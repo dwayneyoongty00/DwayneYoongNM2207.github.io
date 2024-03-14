@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "NM2207 Project Dataset",
     "section": "",
-    "text": "So i have no idea what to put here\nThis is for NM2207 project where I’ll build a website using R Programming Elon Musk Vs Doge Coin 2021 Visualization :)"
+    "text": "Like many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly.\n\n\n\nThe main point of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values.\n\n\n\nTo conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle.\n\n\n\n\nWith this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets."
   },
   {
     "objectID": "index.html#about-me",
@@ -61,5 +61,33 @@
     "title": "Dwayne Yoong’s NM2207 Website",
     "section": "Goals of the Analysis",
     "text": "Goals of the Analysis\nWith this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets."
+  },
+  {
+    "objectID": "about.html#what-am-i-doing",
+    "href": "about.html#what-am-i-doing",
+    "title": "NM2207 Project Dataset",
+    "section": "",
+    "text": "Like many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly."
+  },
+  {
+    "objectID": "about.html#why-am-i-doing-this",
+    "href": "about.html#why-am-i-doing-this",
+    "title": "NM2207 Project Dataset",
+    "section": "",
+    "text": "The main point of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values."
+  },
+  {
+    "objectID": "about.html#what-will-i-be-using",
+    "href": "about.html#what-will-i-be-using",
+    "title": "NM2207 Project Dataset",
+    "section": "",
+    "text": "To conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle."
+  },
+  {
+    "objectID": "about.html#goals-of-the-analysis",
+    "href": "about.html#goals-of-the-analysis",
+    "title": "NM2207 Project Dataset",
+    "section": "",
+    "text": "With this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets."
   }
 ]
