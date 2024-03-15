@@ -23,3 +23,14 @@ To conduct this analysis, I will be utilizing two primary data sources:
 ## Goals of the Analysis
 
 With this data, I hope to create visualizations that illustrate the correlation between Dogecoin's market performance and Elon Musk's tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets.
+
+------------------------------------------------------------------------
+
+#Data Analysis
+
+```{r}
+
+dogecoinData <- read.csv("dogecoin_prices_2021.csv")
+elonMuskTweets <- read.csv("Emusk_2021_tweets.csv")
+
+```
