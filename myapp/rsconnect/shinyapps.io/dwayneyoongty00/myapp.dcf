@@ -1,0 +1,12 @@
+name: myapp
+title: myapp
+username: dwayneyoongty00
+account: dwayneyoongty00
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11498703
+bundleId: 8375487
+url: https://dwayneyoongty00.shinyapps.io/myapp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
