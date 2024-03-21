@@ -34,7 +34,7 @@ For a deeper dive and an interactive exploration of Dogecoin's price trends, ple
 
 ```{=html}
 
-<iframe height="600" width="100%" frameborder="no" src="http://dwayneyoongty00.shinyapps.io/myapp/"> </iframe>
+<iframe height="600" width="100%" frameborder="no" src="https://dwayneyoongty00.shinyapps.io/myapp/"> </iframe>
 ```
 Or you may also visit the application!
 
