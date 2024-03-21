@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
-    "text": "Like many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly.\n\n\n\nThe main point of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values.\n\n\n\nTo conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle.\n\n\n\n\nWith this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets.\n\n\n\n\nTo get a sense of our dataset’s characteristics, it’s helpful to start by examining the data directly. Our dataset includes detailed Dogecoin price movements throughout the year 2021.\nFor a deeper dive and an interactive exploration of Dogecoin’s price trends, please visit our Shiny application:\nInteractive Dogecoin Price Visualization"
+    "text": "Like many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly.\n\n\n\nThe main point of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values.\n\n\n\nTo conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle.\n\n\n\n\nWith this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets.\n\n\n\n\nTo get a sense of our dataset’s characteristics, it’s helpful to start by examining the data directly. Our dataset includes detailed Dogecoin price movements throughout the year 2021.\nFor a deeper dive and an interactive exploration of Dogecoin’s price trends, please check out this Shiny application:\n\n \nOr you may also visit the application!\nInteractive Dogecoin Price Visualization"
   },
   {
     "objectID": "index.html#about-me",
@@ -65,36 +65,64 @@
   {
     "objectID": "about.html#what-am-i-doing",
     "href": "about.html#what-am-i-doing",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
     "text": "Like many others, I’m intrigued by the trends in the stock market and the cryptocurrency space. Specifically, I’m focusing on a memorable event from 2021 - the Dogecoin hype. This cryptocurrency, initially started as a joke, saw its value skyrocket and plummet within a short time span. I’m particularly interested in the role of Elon Musk, whose tweets about Dogecoin in 2021 seemingly influenced its market value significantly."
   },
   {
     "objectID": "about.html#why-am-i-doing-this",
     "href": "about.html#why-am-i-doing-this",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
     "text": "The main point of my analysis is to explore the power of social media influencers, like Elon Musk, over financial markets. I aim to understand how an individual’s statements, whether factually grounded or not, can have a tangible impact on stock or cryptocurrency values."
   },
   {
     "objectID": "about.html#what-will-i-be-using",
     "href": "about.html#what-will-i-be-using",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
     "text": "To conduct this analysis, I will be utilizing two primary data sources:\n\n2021 Historical Prices for Dogecoin: This dataset, obtained from Kaggle, will provide the necessary information about Dogecoin’s price fluctuations throughout 2021.\n2021 Elon Musk’s Tweets Related to Dogecoin: I’ll be examining Elon Musk’s tweets from 2021 that mention Dogecoin, available on Twitter and compiled in a dataset on Kaggle."
   },
   {
     "objectID": "about.html#goals-of-the-analysis",
     "href": "about.html#goals-of-the-analysis",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
     "text": "With this data, I hope to create visualizations that illustrate the correlation between Dogecoin’s market performance and Elon Musk’s tweets. This analysis will not only shed light on the specific Dogecoin phenomenon but also contribute to the broader understanding of the influence of social media on financial markets."
   },
   {
     "objectID": "about.html#dogecoin-price-visualization-interactive-chart",
     "href": "about.html#dogecoin-price-visualization-interactive-chart",
-    "title": "NM2207 Project Dataset",
+    "title": "NM2207 Project Dataset Introduction",
     "section": "",
-    "text": "To get a sense of our dataset’s characteristics, it’s helpful to start by examining the data directly. Our dataset includes detailed Dogecoin price movements throughout the year 2021.\nFor a deeper dive and an interactive exploration of Dogecoin’s price trends, please visit our Shiny application:\nInteractive Dogecoin Price Visualization"
+    "text": "To get a sense of our dataset’s characteristics, it’s helpful to start by examining the data directly. Our dataset includes detailed Dogecoin price movements throughout the year 2021.\nFor a deeper dive and an interactive exploration of Dogecoin’s price trends, please check out this Shiny application:\n\n \nOr you may also visit the application!\nInteractive Dogecoin Price Visualization"
+  },
+  {
+    "objectID": "data-story.html",
+    "href": "data-story.html",
+    "title": "Doge Coin? Elon Musk? What is the big Fuss!",
+    "section": "",
+    "text": "Before January 2021, Dogecoin was relatively stable with little fluctuation in its price. However, seemingly out of nowhere, it spiked in price as seen in the plot below.\nWhy did this sudden change occur? Let’s dive into the data for January and uncover the story behind these movements."
+  },
+  {
+    "objectID": "data-story.html#analysis-of-dogecoin-in-january-2021",
+    "href": "data-story.html#analysis-of-dogecoin-in-january-2021",
+    "title": "Doge Coin? Elon Musk? What is the big Fuss!",
+    "section": "",
+    "text": "Before January 2021, Dogecoin was relatively stable with little fluctuation in its price. However, seemingly out of nowhere, it spiked in price as seen in the plot below.\nWhy did this sudden change occur? Let’s dive into the data for January and uncover the story behind these movements."
+  },
+  {
+    "objectID": "data-story.html#analysis-of-january-2021",
+    "href": "data-story.html#analysis-of-january-2021",
+    "title": "Doge Coin? Elon Musk? What is the big Fuss!",
+    "section": "",
+    "text": "Before January 2021, Dogecoin was relatively stable with little fluctuation in its price. However, seemingly out of nowhere, it spiked in price as seen in the plot below.\nWhy did this sudden change occur? Let’s dive into the data for January and uncover the story behind these movements."
+  },
+  {
+    "objectID": "data-story.html#navigating-through-murky-waters",
+    "href": "data-story.html#navigating-through-murky-waters",
+    "title": "Doge Coin? Elon Musk? What is the big Fuss!",
+    "section": "Navigating Through Murky Waters",
+    "text": "Navigating Through Murky Waters\nBefore we venture further, let’s address the elephant in the room—our major limitation. As much as we’d like to believe that our data analytics wand can reveal all secrets, the truth is more complicated.\nIt’s incredibly challenging to draw a direct correlation between the musings of an influencer—no matter how influential—and the ebb and flow of a cryptocurrency’s value. Did Elon’s tweets really send Dogecoin to the moon, or are we just seeing patterns in the stars?\n\nFebruary Frenzy: A Closer Look\nWith January behind us, our sights are now set on February—a time when Elon Musk’s tweets about Dogecoin were more than just whispers in the digital wind.\nHere, we’ll narrow down our scope and zoom into those specific days in February, reading between the fine lines and identify if there is truly a correlation or NOT!"
   }
 ]

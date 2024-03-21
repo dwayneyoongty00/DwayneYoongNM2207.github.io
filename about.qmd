@@ -1,5 +1,5 @@
 ---
-title: "NM2207 Project Dataset"
+title: "NM2207 Project Dataset Introduction"
 ---
 
 # Project Introduction: The Social Impact of Influencers on Market Value
@@ -30,8 +30,20 @@ With this data, I hope to create visualizations that illustrate the correlation 
 
 To get a sense of our dataset's characteristics, it's helpful to start by examining the data directly. Our dataset includes detailed Dogecoin price movements throughout the year 2021.
 
-For a deeper dive and an interactive exploration of Dogecoin's price trends, please visit our Shiny application:
+For a deeper dive and an interactive exploration of Dogecoin's price trends, please check out this Shiny application:
+
+```{=html}
+
+<iframe height="600" width="100%" frameborder="no" src="http://dwayneyoongty00.shinyapps.io/myapp"> </iframe>
+```
+Or you may also visit the application!
 
 <a href="http://dwayneyoongty00.shinyapps.io/myapp" target="_blank" style="color: #1e90ff; font-weight: bold; text-decoration: none;">Interactive Dogecoin Price Visualization</a>
 
+------------------------------------------------------------------------
 
+# Now, if you are ready...
+
+[Head on over to the next page where we will go through the data story in depth.](data-story.qmd)
+
+------------------------------------------------------------------------

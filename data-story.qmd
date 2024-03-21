@@ -1,0 +1,101 @@
+---
+title: "Doge Coin? Elon Musk? What is the big Fuss!"
+---
+
+```{r setup, include=FALSE}
+
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+library(lubridate) #help me with reading dates easier
+dogecoin_prices <- read.csv("dogecoin_prices_2021.csv")
+dogecoin_prices <- dogecoin_prices %>%
+  mutate(open_time = dmy_hm(open_time))
+
+em_tweets <- read.csv("Emusk_2021_tweets.csv")
+em_tweets <- em_tweets %>% 
+  mutate(Datetime = dmy_hm(Datetime)) #modify and change the format for the date time for easier use
+
+
+```
+
+## Analysis of January 2021
+
+Before January 2021, **Dogecoin** was relatively stable with little fluctuation in its price. However, *seemingly out of nowhere*, it **spiked** in price as seen in the plot below.
+
+[Why did this sudden change occur?]{style="color:blue"} Let's dive into the data for January and uncover the story behind these movements.
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+#make janurary data
+jan_price <- dogecoin_prices %>%
+  filter(month(open_time) == 1 & year(open_time) == 2021)
+
+ggplot(jan_price, aes(x = open_time, y = price)) +
+  geom_line() +
+  labs(title = "Dogecoin Prices in Jan 2021",
+       x = "Date",
+       y = "Price (USD)") +
+  theme_minimal()
+
+
+```
+
+# So what did Elon Musk do in January!
+
+**So, what exactly happened between January 27 and 29?** And why is Elon Musk the main subject here? Well, it's obvious, isn't it? He must have influenced the market... *right?*
+
+Let's dive into all his tweets from January. We'll specifically look for any tweets related to Dogecoin. Could these tweets be the catalyst for the sudden spike?
+
+<span style="color:darkblue">*Stay tuned as we unravel the tweets and their potential impact on Dogecoin's value.*</span>
+
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+
+jan_tweets <- em_tweets %>%
+  filter(month(Datetime) == 1 & year(Datetime) == 2021) #filter to only jan 2021 
+#so its all jan tweets right now.. we need to filter
+#google taught me to use grepl as a way to match words, yolo
+
+jan_doge_tweets <- jan_tweets %>% 
+  filter(grepl("Doge|Dogecoin", Text, ignore.case = TRUE))
+
+# Displaying tweets
+knitr::kable(jan_doge_tweets)
+
+```
+
+
+Just look at that!. Oh? Nothing is appearing? Well if nothing is appearing, thats not your fault or any one infact, Elon Musk actually didn't do anything during January! Thats right! I've combed through his tweets, filtered them to January and filtered through for anything that has the word "Doge" and turns out he didn't mention it at all! So the spike in January wasn't due to him. But he did mention his dog!
+
+
+``` {r,echo=FALSE,message=FALSE,warning=FALSE}
+
+jan_dog_tweet <- jan_tweets %>% 
+  filter(grepl("Dog", Text, ignore.case = TRUE)) %>%
+  select(-Tweet.Id)  # Exclude the "Tweet Id" column
+
+# Displaying tweets
+knitr::kable(jan_dog_tweet)
+```
+
+
+![His Dog!](Pictures/elonmuskdog.jpeg)
+
+*The dog in question.*
+
+
+## Navigating Through Murky Waters
+
+Before we venture further, let's address the elephant in the room—our **major limitation**. As much as we'd like to believe that our data analytics wand can reveal all secrets, the truth is more complicated.
+
+It's incredibly challenging to draw a direct correlation between the musings of an influencer—no matter how influential—and the ebb and flow of a cryptocurrency's value. Did Elon's tweets really send Dogecoin to the moon, or are we just seeing patterns in the stars?
+
+### February Frenzy: A Closer Look
+
+With January behind us, our sights are now set on February—a time when Elon Musk's tweets about Dogecoin were more than just whispers in the digital wind. 
+
+Here, we'll narrow down our scope and zoom into those specific days in February, reading between the fine lines and identify if there is truly a correlation or NOT!
+
+
+
+
