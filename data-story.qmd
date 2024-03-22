@@ -8,6 +8,7 @@ library(ggplot2)
 library(dplyr)
 library(tidyverse)
 library(lubridate) #help me with reading dates easier
+library(kableExtra)
 dogecoin_prices <- read.csv("dogecoin_prices_2021.csv")
 dogecoin_prices <- dogecoin_prices %>%
   mutate(open_time = dmy_hm(open_time))
@@ -46,8 +47,7 @@ ggplot(jan_price, aes(x = open_time, y = price)) +
 
 Let's dive into all his tweets from January. We'll specifically look for any tweets related to Dogecoin. Could these tweets be the catalyst for the sudden spike?
 
-<span style="color:darkblue">*Stay tuned as we unravel the tweets and their potential impact on Dogecoin's value.*</span>
-
+[*Stay tuned as we unravel the tweets and their potential impact on Dogecoin's value.*]{style="color:darkblue"}
 
 ```{r, echo=FALSE,message=FALSE,warning=FALSE}
 
@@ -64,11 +64,9 @@ knitr::kable(jan_doge_tweets)
 
 ```
 
-
 Just look at that!. Oh? Nothing is appearing? Well if nothing is appearing, thats not your fault or any one infact, Elon Musk actually didn't do anything during January! Thats right! I've combed through his tweets, filtered them to January and filtered through for anything that has the word "Doge" and turns out he didn't mention it at all! So the spike in January wasn't due to him. But he did mention his dog!
 
-
-``` {r,echo=FALSE,message=FALSE,warning=FALSE}
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
 
 jan_dog_tweet <- jan_tweets %>% 
   filter(grepl("Dog", Text, ignore.case = TRUE)) %>%
@@ -78,11 +76,9 @@ jan_dog_tweet <- jan_tweets %>%
 knitr::kable(jan_dog_tweet)
 ```
 
-
 ![His Dog!](Pictures/elonmuskdog.jpeg)
 
 *The dog in question.*
-
 
 ## Navigating Through Murky Waters
 
@@ -90,12 +86,179 @@ Before we venture further, let's address the elephant in the room—our **major 
 
 It's incredibly challenging to draw a direct correlation between the musings of an influencer—no matter how influential—and the ebb and flow of a cryptocurrency's value. Did Elon's tweets really send Dogecoin to the moon, or are we just seeing patterns in the stars?
 
-### February Frenzy: A Closer Look
+# February Frenzy: A Closer Look
 
-With January behind us, our sights are now set on February—a time when Elon Musk's tweets about Dogecoin were more than just whispers in the digital wind. 
+With January behind us, our sights are now set on February—a time when Elon Musk's tweets about Dogecoin were more than just whispers in the digital wind.
 
 Here, we'll narrow down our scope and zoom into those specific days in February, reading between the fine lines and identify if there is truly a correlation or NOT!
 
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
 
+# Filter the prices to include only February's data
+feb_prices <- dogecoin_prices %>%
+  filter(month(open_time) == 2 & year(open_time) == 2021)
+
+# Plot February prices
+ggplot(feb_prices, aes(x = open_time, y = price)) +
+  geom_line(color = "blue") +
+  labs(title = "Dogecoin Prices in February 2021",
+       x = "Date",
+       y = "Price in USD") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis text for readability
+
+```
+
+Wow! That's alot of movement out of no where! I wonder what Elon Musk was saying.
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE, results = 'asis'}
+# Filter tweets for Feb and related to Dogecoin
+feb_doge_tweets <- em_tweets %>%
+  filter(month(Datetime) == 2 & year(Datetime) == 2021) #filter to only feb 2021 
+
+
+feb_doge_tweets <- feb_doge_tweets %>% 
+  filter(grepl("Doge|Dogecoin", Text, ignore.case = TRUE)) %>%
+  select(-Tweet.Id)
+
+# Display Elon's Dogecoin-related tweets for February
+#knitr::kable(feb_doge_tweets, caption = "Elon Musk's Dogecoin-related Tweets in February")
+
+# Format and display the tweets with kableExtra for better control over the appearance and also because kable breaks when its too many messages
+
+feb_doge_tweets %>%
+  mutate(Text = linebreak(Text)) %>%  # Enable text wrapping for the Text column
+  kable("html", table.attr = "style='width:100%;'") %>%  # Set table width to 100%
+  kable_styling("striped", full_width = F) %>%  # Use striped styling, don't stretch full width
+  column_spec(1, width = "15em") %>%  # Adjust the width of specific columns if necessary
+  column_spec(2, width = "85em")  # Set the width for the tweet text column
+
+
+```
+
+**WOW**! Isn't that just quite a bit from him just on Doge.... And from the looks of it, his really hyping it up! But its pretty hard to visualize this on our own, so why not we plot his tweets onto the February price chart!
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+#this took 1 hour. i hate this
+
+feb_em_tweet_date <- feb_doge_tweets %>%
+  distinct(Datetime) %>%
+  pull(Datetime)
+
+#OKAY we created the dates that we need
+
+#lets replot the ggplot again
+# Plot February prices
+ggplot(feb_prices, aes(x = open_time, y = price)) +
+  geom_line(color = "blue") +
+  geom_vline(data = data.frame(xintercept = feb_em_tweet_date), 
+             aes(xintercept = xintercept), 
+             linetype = "dotted", 
+             color = "red", 
+             size = 1) +
+  labs(title = "Dogecoin Prices in February 2021",
+       x = "Date",
+       y = "Price in USD") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis text for readability
+```
+
+Looks like we are Onto something... maybe? From this large view, it really could mean 2 things
+
+1.  *Dogecoin is moving up and spiking whenever Elon tweets about it*
+2.  *Elon Tweets as Dogecoin is moving up*
+
+Its difficult when we see it in this view, so lets Zoom in to a specific date... Lets say... **February 4?**
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+
+#filter a feb 4 date
+feb_em_tweet_4 <- feb_doge_tweets %>%
+  filter(month(Datetime) == 2 & day(Datetime) == 4) %>% # filter to feb 4
+  pull(Datetime)
+
+feb_4_price <- feb_prices %>%
+  filter(month(open_time) == 2 & day(open_time) == 4) # filter to feb 4
+
+
+# Plotting the prices with the tweet indicators
+ggplot(feb_4_price, aes(x = open_time, y = price)) +
+  geom_line(color = "blue") +
+  geom_vline(xintercept = feb_em_tweet_4[1], linetype="dotted", color="red", size=1) +
+  geom_vline(xintercept = feb_em_tweet_4[2], linetype="dotted", color="orange", size=1) +
+  labs(title = "Dogecoin Prices on February 4, 2021",
+       x = "Time",
+       y = "Price in USD") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+OKAY! We are getting somewhere, right? We can clearly see theres some movement due to the 2 tweets that are so close to each other yet the price is significantly different. *Lets zoom in just 1 last time!*
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+
+# Filter for February 4th between 07:00 and 09:00
+feb_4_price_filtered <- feb_4_price %>%
+   filter(open_time >= ymd_hms("2021-02-04 07:00:00") & open_time <= ymd_hms("2021-02-04 09:00:00"))
+
+feb_em_tweet_4_df <- feb_doge_tweets %>%
+   filter(Datetime >= ymd_hms("2021-02-04 07:00:00") & Datetime <= ymd_hms("2021-02-04 09:00:00"))
+
+
+#idk im trying to merge tweet time and price dataset, i genuinely have no idea what im doing at this point if you can read this
+feb_tweet_price <- merge(feb_4_price, feb_em_tweet_4_df, by.x = "open_time", by.y="Datetime")
+
+#i want to add the anotation here for the price
+feb_4_annotation <- paste0("Tweet 1: $", feb_tweet_price$price[1], "\nTweet 2: $", feb_tweet_price$price[2])
+
+# Create the plot
+ggplot(feb_4_price_filtered, aes(x = open_time, y = price)) +
+  geom_line(color = "blue") +
+  scale_x_datetime(date_labels = "%H:%M", date_breaks = "1 hour") +
+  geom_point(data = feb_tweet_price, aes(x = open_time, y = price, color = feb_4_annotation), size = 4) +
+  geom_vline(xintercept = feb_em_tweet_4[1], linetype="dotted", color="red", size=1) +
+  geom_vline(xintercept = feb_em_tweet_4[2], linetype="dotted", color="orange", size=1) +
+  labs(title = "Dogecoin Prices on February 4, 2021 (07:00 - 09:00)",
+       x = "Time",
+       y = "Price in USD") +
+  scale_color_manual(
+    name = "Tweet Prices",  # This changes the legend title
+    values = c("purple")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+```
+
+**As you can see!** During these 2 particular point in **February** **4**, *Elon Musk* gave 2 tweets about Doge coin and seemingly it seemed to spike almost **immediately**! Of course there are some down points but that could also mean many people are selling their stock!
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+
+# Displaying tweets
+knitr::kable(feb_em_tweet_4_df)
+
+```
+
+*The Tweets he made on the 4th of Feb.*
+
+# The First Domino Falls: February 4th's Tweet Heard Around the Crypto World
+
+And there it was—*the tweet that launched a thousand trades*. February 4th marked a pivotal moment in the digital currency saga, when a mere 280 characters from **Elon Musk** rippled through the markets, sending Dogecoin's prices on a meteoric surge. It was not just a spike; it was a declaration that in the new age of social-media-driven markets, the influence of a single individual can indeed eclipse traditional market forces.
+
+While a granular, tweet-by-tweet analysis might yield a complex tapestry of correlation and causation, the events of February 4th speak volumes on their own. In a world where markets hang on every word of industry titans, this was a resounding testament to the power of influence.
+
+We stand at the crossroads of market dynamics and social media impact—a juncture where a simple digital utterance can send shockwaves across the financial landscape. As we pull the curtain on this data story, we're left with a lingering question more valuable than Dogecoin itself: In this new era of investment, where do we draw the line between economic strategy and social sway?
+
+The saga continues, but for now, February 4th remains a stark reminder: in the cryptocurrency arena, sometimes the pen (or should we say tweet?) is mightier than the dollar.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: center;"}
+<img src="Pictures/elondoge.jpg" alt="Elon Musk Tweet Impact Visualization"/>
+
+<p><em>Visualization of Dogecoin's Price Movement in Response to Elon Musk's Tweets</em></p>
+:::
 
 
